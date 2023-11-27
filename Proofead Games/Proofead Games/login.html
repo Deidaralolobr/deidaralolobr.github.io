@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="login.css">
+    <title>Proofead Games Login</title>
+</head>
+<body>
+    <main>
+        <section class="box_login">
+            <div class="login">
+                <div>
+                    <i class="bi bi-controller"></i>
+                </div>
+                <form>
+                    <input type="text" placeholder="Nome de usuário" id="login" autofocus>
+                    <input type="password" placeholder="Sua senha" id="senha">
+                    <input type="submit" onclick="logar(); return false" value="Entrar">
+                </form>
+                <script>
+                    function logar(){
+                        var username = document.getElementById('login').value;
+                        var senha = document.getElementById('senha').value;
+
+                        if(username == "junin" && senha == "admin"){
+                            alert("Login executado com sucesso");
+                            location.href = "index.html";
+                        }else{
+                            alert("Usuario ou senha incorretos");
+                        }
+                    }
+                </script>
+                <p>Ainda não tem conta? <a href="#">Criar conta</a></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

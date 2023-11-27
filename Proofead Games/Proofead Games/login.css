@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500&family=Girassol&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#1B1F27;
+    height: 100vh;
+    overflow: hidden;
+}
+.box_login{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.login{
+    background-color: #181920;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 355px;
+    height: 355px;
+    padding: 35px;
+}
+.login form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.login input{
+    margin-top: 10px;
+    background-color: #252A34;
+    padding-left: 10px;
+    color: #CBD0F7;
+    border: none;
+    height: 45px;
+    border-radius: 8px;
+}
+.login i{
+    border-radius: 20px;
+    color: #CBD0F7;
+    font-size: 65px;
+}
+input::placeholder{
+    color: #CBD0F7;
+    font-size: 14px;
+}
+form [type="submit"]{
+    display: block;
+    background-color: #56070C;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+p{
+    color: #CBD0F7;
+    margin-top: 10px;
+}
+a{
+    color: #E9BABA;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}

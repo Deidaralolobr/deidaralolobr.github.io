@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500&family=Girassol&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#56070C;
+    height: 100vh;
+    font-family: 'Exo', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.interface{
+    max-width: 1580px;
+    margin: 0 auto;
+}
+header{
+    padding: 30px 4%;
+    border-bottom: 2px solid #E3E3E3;
+}
+header>.interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: transparent;
+    color: #E9BABA;
+    display: inline-block;
+    transition: .3s;
+}
+header a:hover{
+    text-decoration: underline;
+    color: #E9BABA;
+    transition: .3s;
+    transform: scale(1.05);
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav.navbar ul li{
+    display: inline-block;
+    padding: 0px 80px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #E9BABA;
+    font-size: 25px;
+}
+.logo i{
+    font-size: 45px;
+}
+.perfil{
+    display: flex;
+    align-items: center;
+    color: #E9BABA;
+    gap: 10px;
+}
+.perfil p{
+    font-size: 20px;
+}
+.box{
+    display: flex;
+    align-items: center;
+}
+.box i{
+    font-size: 40px;
+    color: #E9BABA;
+    cursor: pointer;
+}
+.topo_site{
+    background: linear-gradient(179.50deg, black 0%, #56070C 90%);
+    padding-bottom: 60px;
+    border-bottom: 2px solid black;
+    box-shadow: 0 0 20px #000000;
+}
+.topo_site h1{
+    letter-spacing: 1px;
+    font-size: 35px;
+    font-weight: 400;
+    padding-top: 20px;
+    color: #E9BABA;
+    font-family: 'Girassol', serif;
+    display: flex;
+    justify-content: center;
+}
+.pesquisa{
+    background-color: #56070C;
+    border: 2px solid #E3E3E3;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 15px;
+    margin-left: 630px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+.texto_pesquisa{
+    background: none;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    color: #E3E3E3;
+    font-family: 'Exo', sans-serif;
+}
+.pesquisa i{
+    font-size: 20px;
+    color: #E3E3E3;
+}
+.texto_pesquisa::placeholder{
+    color: #E9BABA;
+}
+.content{
+    height: 600px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    margin-top: 25px;
+    margin-left: 300px;
+    border: 2px solid #E3E3E3;
+    box-shadow: 0 0 15px #E9BABA;
+}
+.navigation{
+    transform: translate(-50%);
+    display: flex;
+}
+.bar{
+    width: 70px;
+    height: 17px;
+    border: 2px solid #000000;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+.bar:hover{
+    background: #E9BABA;
+}
+.slides input{
+    display: none;
+}
+.slides{
+    position: relative;
+    display: flex;
+    width: 480px;
+    height: 600px;
+}
+.slide{
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+    width: 100%;
+    height: 100%;
+}
+.slide img{
+    width: 200%;
+    height: 100%;
+}
+.slide p {
+    font-size: 20px;
+    position: absolute;
+    right: -50%;
+    bottom: 3%;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+input:checked ~ .slide {
+    opacity: 0;
+}
+#slide1:checked ~ .s1,
+#slide2:checked ~ .s2,
+#slide3:checked ~ .s3 {
+    opacity: 1;
+}
+.alta h1{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    color: #E9BABA;
+    font-family: 'Girassol', serif;
+    letter-spacing: 1px;
+    font-size: 35px;
+    font-weight: 500;
+}
+.alta{
+    margin: 0 auto;
+    padding: 20px 4%;
+    border-bottom: 2px solid black;
+    box-shadow: 0 0 20px #000000;
+}
+.jogos_container{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 20px;
+}
+.jogos{
+    text-align: center;
+    padding: 10px;
+    background: transparent;
+    color: #56070C;
+    outline: 2px solid #ccc;
+    outline-offset: -.8rem;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 18px;
+}
+.jogos:hover{
+    outline: 3px solid #222;
+    outline-offset: 0rem;
+    transition: .5s;
+    transform: scale(1.04);
+    background: #E9BABA;
+    color: black;
+}
+.jogos img{
+    margin-top: 10px;
+    height: 13rem;
+    border: 3px solid #222;
+}
+.blog_slide{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 10px;
+    left: 50%;
+    transform: translateX(-55%);
+}
+.slider{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+.slider.active{
+   clip-path: circle(150% at 0 50%);
+   transition: 1.5s;
+   transition-property: clip-path;
+}
+.slider img{
+    z-index: 1;
+    width: 110%;
+    border: 2px solid #E3E3E3;
+    border-radius: 10px;
+}
+.info{
+    position: absolute;
+    bottom: 0;
+    padding: 10px 20px;
+}
+.info h2{
+    background:rgba(0, 0, 0, 0.8) ;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.info p{
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    font-size: 16px;
+    width: 70%;
+    padding: 10px;
+    border-radius: 4px;
+}
+.navegation{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    bottom: 20px;
+    left: 80%;
+    transform: translateX(-60%);
+}
+.btn{
+    background: rgba(255,255,255,0.8);
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.btn.active{
+    background: #fff;
+    box-shadow:2px rgba(0,0,0,0.5);
+}
+.blog h1{
+    font-family: 'Girassol', serif;
+    letter-spacing: 1px;
+    font-size: 35px;
+    font-weight: 400;
+    color: #E9BABA;
+    text-align: center;
+    padding-top: 50px;
+}
+.blog{
+    padding: 60px;
+    margin-bottom: 100px;
+}
+footer{
+    padding: 10px 4%;
+    border-top: 2px solid #E3E3E3;
+    box-shadow: 0 0 30px 30px  #000000;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.btn_social a{
+    color: #E9BABA;
+    text-decoration: none;
+    font-family: 'Exo', sans-serif;
+    font-size: 20px;
+}
+.btn_social button{
+    width: 45px;
+    height: 45px;
+    border-radius: 30%;
+    border: 2px solid #E3E3E3;
+    background-color: #E9BABA;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 20px 8px;
+    transition: .2s;
+}
+.btn_social button:hover{
+    background-color: #56070C;
+    border: 2px solid #222;
+    color: #E3E3E3;
+    transition: 0.5s;
+}

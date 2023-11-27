@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="logn.css">
+    <title>Proofead Games</title>
+</head>
+
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <i class="bi bi-controller"></i>
+                Proofead Games
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#alta">Em Alta</a></li>
+                    <li><a href="#noti">Notícias</a></li>
+                </ul>
+            </nav>
+            <div class="box">
+                <div class="perfil">
+                    <a href="login.html">
+                        <i class="bi bi-person-circle"></i>
+                    </a>
+                    <a href="login.html">
+                        <p>Login</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="topo_site">
+            <div class="interface">
+                <h1 class="titulo">Catálogo</h1>
+                <div class="pesquisa">
+                    <input type="text" class="texto_pesquisa" placeholder="Buscar...">
+                    <a><i class="bi bi-search"></i></a>
+                </div>
+            <div class="content">
+                <div class="slides">
+                    <input type="radio" name="slide" id="slide1" checked>
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
+                    <div class="slide s1">
+                        <img src="Sonic.jpg" alt="Sonic">
+                        <p>Jogar ao lado de amigos é o show de “Sonic Superstars”. Relembrando os velhos tempos em que
+                            não existia jogo online, quatro pessoas reunidas na frente da TV, conversando sobre o jogo e
+                            rindo a cada deslize ou a cada segredo encontrado é mais “videogame” possível em pleno 2023.
+                        </p>
+                    </div>
+                    <div class="slide s2">
+                        <img src="prince.jpg" alt="Prince">
+                        <p>Mergulha numa fantasia mitológica persa através de uma história intrigante e original, à
+                            medida que usas a inteligência para resolver puzzles, encontrar tesouros escondidos e
+                            completar missões, e descobres mais sobre este local corrompido.</p>
+                    </div>
+                    <div class="slide s3">
+                        <img src="Lies of p.jpg" alt="Lies of p">
+                        <p>Pinóquio deve lutar para sobreviver usando uma grande variedade de armas e Legion Arms com
+                            habilidades especiais. Ele também encontrará personagens não hostis, mas será necessário
+                            mentir para que ele realize seu sonho de se tornar humano.</p>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <label class="bar" for="slide1"></label>
+                    <label class="bar" for="slide2"></label>
+                    <label class="bar" for="slide3"></label>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="alta" id="alta">
+                <h1>Jogos em Alta</h1>
+                <div class="jogos_container">
+                <div class="jogos" id="jogo1">
+                    <img src="alta/dead.jpg" alt="dead">
+                    <h3>Dead Space</h3>
+                    <div class="resum">
+                        <p>O jogador toma o papel de um engenheiro chamado Isaac Clarke, que luta contra uma infestação alienígena, parecida com vírus, que transforma humanos em monstros</p> 
+                    </div>
+                </div>
+                <div class="jogos" id="jogo2">
+                    <img src="alta/final.jpg" alt="final">
+                    <h3>Final Fantasy XVI</h3>
+                    <div class="resum">
+                        <p>Você jogará como Clive Rosfield, um homem com a missão de libertar a humanidade de seu destino, explorando o território diverso de Valisthea e usando os espetaculares poderes dos Eikons para superar inimigos poderosos.</p> 
+                    </div>
+                </div>
+                <div class="jogos" id="jogo3">
+                    <img src="alta/metroid.jpg" alt="metroid">
+                    <h3>Metroid Prime Remastered</h3>
+                    <div class="resum">
+                        <p>Samus encontra seu inimigo, Meta Ridley, a quem ela persegue até a superfície de Tallon IV. Cabe a ela explorar as regiões interconectadas do planeta, investigar seus segredos sombrios e acabar com a ameaça intergaláctica que Phazon representa.</p> 
+                    </div>
+                </div>
+                <div class="jogos" id="jogo4">
+                    <img src="alta/r4.jpg" alt="r4">
+                    <h3>Resident Evil 4 Remake</h3>
+                    <div class="resum">
+                        <p>Situado seis anos após o incidente de Raccoon City, Resident Evil 4 traz Leon S. Kennedy de volta como protagonista. Escolhido para integrar uma equipe especial do governo, Leon parte em uma missão para resgatar a filha do presidente dos Estados Unidos, Ashley Graham, raptada por um grupo misterioso.</p> 
+                    </div>
+                </div>
+                <div class="jogos" id="jogo5">
+                    <img src="alta/Street.jpg" alt="Street">
+                    <h3>Street Fighter 6</h3>
+                    <div class="resum">
+                        <p>Street Fighter 6 tem uma campanha focada em seu novo modo World Tour, que é protagonizado por um lutador original criado pelo jogador. Este personagem passará por uma jornada introspectiva, recheada de elementos de RPG, com o objetivo de se tornar mais forte.</p> 
+                    </div>
+                </div>
+                <div class="jogos" id="jogo6">
+                    <img src="alta/zelda.jpg" alt="zelda">
+                    <h3>The Legend of Zelda: Tears of the Kingdom</h3>
+                    <div class="resum">
+                        <p>Com a ressurreição do “Demon King” e Hyrule novamente ameaçada, Link precisa embarcar em uma nova aventura para encontrar representantes dos antepassados de cada raça do reino para cumprir um pacto de milênios e deter Ganondorf e seu exército de monstros, além de investigar o sumiço da princesa Zelda.</p> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="blog" id="noti">
+            <h1>Notícias</h1>
+            <div class="blog_slide">
+                <div class="slider active">
+                    <img src="Blog/Cod.jpg" alt="Cod">
+                    <div class="info">
+                        <h2><ins>Call of Duty: Modern Warfare III já disponível para PlayStation, Xbox e PC</ins></h2>
+                        <p>A Xbox e a Activision estão lançando hoje (10) o jogo Call of Duty: Modern Warfare III, continuação direta de Modern Warfare II, lançado no ano passado. O novo título traz novidades na jogabilidade, novos mapas multiplayer e um modo zumbi inédito. Ele está disponível para PlayStation 4, PlayStation 5, Xbox One, Xbox Series, e PC.</p>
+                    </div>
+                </div>
+                <div class="slider">
+                    <img src="Blog/Bald.jpg" alt="Bald">
+                    <div class="info">
+                        <h2><ins>Baldur’s Gate 3 é o grande vencedor do Golden Joystick Awards 2023</ins></h2>
+                        <p>Realizada nesta sexta-feira (10), a cerimônia de premiação do Golden Joysticks Awards 2023 teve Baldur’s Gate 3 como seu grande vencedor. Além de levar para casa troféus como o de melhor narrativa e design visual, o RPG desenvolvido pela Larian Studios também foi consagrado como o Jogo do Ano pela premiação.</p>
+                    </div>
+                </div>
+                <div class="slider">
+                    <img src="Blog/Mk1.jpg" alt="Mk1">
+                    <div class="info">
+                        <h2><ins>Mortal Kombat 1 dará mais fatalities para quem comprou o pacote no Halloween</ins></h2>
+                        <p>A Warner Bros. Games e a NetherRealm Studios estão bonificando os jogadores de Mortal Kombat 1 pelas discussões polêmicas sobre os fatalities pagos, que foram introduzidos no Halloween dentro da experiência. Para se desculpar com o público, quem comprou o primeiro terá acesso aos dois próximos e sem custos adicionais.</p>
+                    </div>
+                </div>
+                <div class="navegation">
+                    <div class="btn active"></div>
+                    <div class="btn"></div>
+                    <div class="btn"></div>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript">
+            var slides=document.querySelectorAll('.slider');
+            var btns=document.querySelectorAll('.btn');
+            let currentSlide=1;
+
+            var manualNav = function(manual){
+                slides.forEach((slider) => {
+                    slider.classList.remove('active');
+                btns.forEach((btn) => {
+                    btn.classList.remove('active');
+                });
+                });
+
+                slides[manual].classList.add('active');
+                btns[manual].classList.add('active');
+            }
+
+            btns.forEach((btn, i) => {
+                btn.addEventListener("click", () => {
+                    manualNav(i);
+                    currentSlide=i;
+                });
+            });
+            var repeat=function(activeClass){
+                let active=document.getElementsByClassName('active');
+                let i=1;
+
+                var repeater = () => {
+                    setTimeout(function(){
+                        [...active].forEach((activeSlide) => {
+                            activeSlide.classList.remove('active');
+                        });
+
+                        slides[i].classList.add('active');
+                        btns[i].classList.add('active');
+                        i++;
+
+                        if(slides.length ==i){
+                            i=0;
+                        }
+                        if(i>=slides.length){
+                            return;
+                        }
+                        repeater();
+                    },10000);
+                }
+                repeater();
+            }
+            repeat();
+        </script>
+        <footer>
+            <div class="logo">
+                <i class="bi bi-controller"></i>
+                Proofead Games
+            </div>
+                 <div class="btn_social">
+                    <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                    <a href="#"><button><i class="bi bi-whatsapp"></i></button> Suporte</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
